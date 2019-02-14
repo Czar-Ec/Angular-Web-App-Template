@@ -1,9 +1,8 @@
-# Angular Web App Template
-This is a quick start repository for web applications. The template is preset with Angular 7 and Angular Material.
-To set up for development, run `npm install` (or `yarn install`) to get all the development dependencies.
-`npm start` runs the application in development mode and automatically opens the relevant page in the default browser.
+# Angular-Web-App-Template
 
-=========================================================
+## Master branch [![Build Status](https://travis-ci.org/Czar-Ec/Angular-Web-App-Template.svg?branch=master)](https://travis-ci.org/Czar-Ec/Angular-Web-App-Template)
+
+## Develop branch [![Build Status](https://travis-ci.org/Czar-Ec/Angular-Web-App-Template.svg?branch=develop)](https://travis-ci.org/Czar-Ec/Angular-Web-App-Template)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
