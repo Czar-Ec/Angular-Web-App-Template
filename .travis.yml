@@ -3,9 +3,8 @@ node_js:
 - "10.8"
 
 branches:
-  only:
-  - master
-  - develop
+  except:
+  - gh-pages
 
 addons:
   chrome: stable
@@ -20,8 +19,8 @@ cache:
 
 script:
 - ng lint
-- ng test --watch=false
-- ng build --prod
+- yarn test:all
+- yarn build
 
 deploy:
   provider: pages
