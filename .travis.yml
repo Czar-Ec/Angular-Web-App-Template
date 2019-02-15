@@ -10,8 +10,6 @@ dist: trusty
 
 addons:
   chrome: stable
-before_install:
-  - google-chrome-stable --headless --diable-gpu --remote-debugging-port=9223 http://localhost &
 
 before_script:
 - yarn global add @angular/cli
