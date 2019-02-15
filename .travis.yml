@@ -3,12 +3,15 @@ node_js:
 - "10.8"
 
 branches:
-  only:
-  - master
-  - develop
+  except:
+  - gh-pages
+
+dist: trusty
 
 addons:
   chrome: stable
+before_install:
+  - google-chrome-stable --headless --diable-gpu --remote-debugging-port=9223 http://localhost &
 
 before_script:
 - yarn global add @angular/cli
@@ -20,8 +23,8 @@ cache:
 
 script:
 - ng lint
-- ng test --watch=false
-- ng build --prod
+- yarn test
+- yarn build
 
 deploy:
   provider: pages
