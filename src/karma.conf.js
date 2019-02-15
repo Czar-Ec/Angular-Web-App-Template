@@ -7,7 +7,7 @@ module.exports = function (config) {
     customLaunchers: {
       MyHeadlessChrome: {
         base: 'ChromeHeadless',
-        flags: ['--disable-translate', '--disable-entensions', '--remote-debugging-port=9223', '--no-sandbox']
+        flags: ['--disable-translate', '--disable-extensions', '--remote-debugging-port=8080', '--no-sandbox']
       }
     },
     basePath: '',
