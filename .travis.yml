@@ -23,7 +23,7 @@ cache:
 
 script:
 - ng lint
-- yarn test:all
+- yarn test
 - yarn build
 
 deploy:
